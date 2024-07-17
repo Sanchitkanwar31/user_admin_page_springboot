@@ -1,15 +1,16 @@
 package admin_user.service;
 
 import org.springframework.stereotype.Service;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import admin_user.dto.UserDto;
 import admin_user.model.User;
 import admin_user.repositories.UserRepository;
 
+
 @Service
 
 public class UserServiceImpl implements UserService {
-
+        @Autowired
 	public UserRepository userRepository;
 	@Override
 	public User save(UserDto userDto) {
