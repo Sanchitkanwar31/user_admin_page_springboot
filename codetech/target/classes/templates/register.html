@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h2>Registration Form</h2>
+		<form 	
+		action="@{/registration}"
+        method="post"
+	
+		>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required><br><br>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required><br><br>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required><br><br>
+			<label for="post">Post:</label>
+			<textarea id="post" name="post" required></textarea><br><br>
+			<input type="submit" value="Register">
+		</form>
+	</div>
+</body>
+</html>
